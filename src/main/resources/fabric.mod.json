@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial-mod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "This is a tutorial mod goofy af",
+	"authors": [
+		"Ihnore Ihor"
+	],
+	"contact": {
+		"homepage": "https://furtable.web.app/",
+		"sources": "https://github.com/Ihnore-Ihor/tutorial-mod-goofy-af.git"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ihnore_ihor.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.ihnore_ihor.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.ihnore_ihor.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
